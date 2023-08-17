@@ -1,0 +1,18 @@
+class grocerylist:
+  def __init__(self):
+    self.items = []
+
+class GroceryItemOrder:
+    def __init__(self, name, quantity, ppu):
+        self.name = name
+        self.quantity = quantity
+        self.ppu = ppu
+
+item1 = GroceryItemOrder("oranges", 8, 3.6)
+item2 = GroceryItemOrder("apples", 4, 6.2)
+
+grocery_list = GroceryList()
+grocery_list.add_item(item1)
+grocery_list.add_item(item2)
+
+print(grocery_list)
